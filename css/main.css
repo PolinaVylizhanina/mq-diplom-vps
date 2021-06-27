@@ -154,8 +154,18 @@
     display: flex;        
   }
 
+  @media (min-width: 1200px), (min-width: 641px) and (max-width:1200px) and (orientation: landscape) { /*trends for tablet landscape and desktop*/
+    .trend-item {
+      width: 25%;
+      }
+
+    .trend-item:nth-child(n+2) {
+      margin-left: 5px;
+    }
+  
+  }
+
   .trend-item {
-    width: 25%;
     padding: 155px 20px 15px 20px;
     box-sizing: border-box;
     position: relative;
@@ -175,10 +185,6 @@
     bottom: 0;
     opacity: 0.6;
   }  
-
-  .trend-item:nth-child(n+2) {
-    margin-left: 5px;
-  }
 
   .trend-content {
     width: 100%;
@@ -248,7 +254,7 @@
     font-size: 14px;
     font-weight: bold;
   }
-
+    
   .content {
     margin-top: 65px;
     margin-left: auto;
@@ -661,6 +667,27 @@
     }
 }
 
+@media (min-width: 641px) and (max-width:1200px) and (orientation: portrait), (max-width: 640px) and (orientation: landscape) {
+  .trends-container {
+    flex-wrap: wrap;
+  }
+  .trend-item  {
+    width: calc((100% - 5px) / 2);
+  }
+
+  .trend-item:nth-child(n+3) {
+    margin-top: 5px;
+  }
+ 
+  .trend-item:nth-child(n+2) {
+    margin-left: 0;
+  }
+  
+  .trend-item:nth-child(even) {
+    margin-left: 5px;
+  }
+}
+
 @media (min-width: 641px) and (max-width:1200px)  { /*for tablet*/
 
   .header {
@@ -677,26 +704,6 @@
 
  .section-caption {
    font-size: 18px;
- }
-
- .trends-container {
-   flex-wrap: wrap;
- }
-
- .trend-item  {
-   width: calc((100% - 5px) / 2);
- }
-
- .trend-item:nth-child(n+3) {
-   margin-top: 5px;
- }
-
- .trend-item:nth-child(n+2) {
-   margin-left: 0;
- }
- 
- .trend-item:nth-child(even) {
-   margin-left: 5px;
  }
 
  .trend-caption {
@@ -746,15 +753,29 @@
     font-size: 17px;
     line-height: 22px;
   }
-
   .products-catalog {
     display: none;
   }
-  
+
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+
+  .trends-container {
+    flex-wrap: wrap;
+  }
+
+  .trend-item  {
+    width: 100%;
+  }
+
+  .trend-item:nth-child(n+2) {
+    margin-top: 5px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 640px)   { /*for mobile*/
-
 
   .header {
     background-image: url(../img/banner-mobile.jpg);
@@ -782,19 +803,6 @@
     margin-top: 40px;
     font-size: 26px;
     line-height: 36px;
-  }
-
-  .trends-container {
-    flex-wrap: wrap;
-  }
-
-  .trend-item  {
-    width: 100%;
-  }
-
-  .trend-item:nth-child(n+2) {
-    margin-top: 5px;
-    margin-left: 0;
   }
 
   .trend-caption {
@@ -856,6 +864,6 @@
   .products-catalog {
     display: none;
   }
-  
+   
 }
 
