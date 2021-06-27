@@ -119,8 +119,7 @@
     z-index: 2;
   }
   
-
- .trends {
+  .trends {
     width: 100%;
   } 
 
@@ -351,7 +350,9 @@
   
   .aside-header-new-post {
     margin-bottom: 40px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .new-post-caption {
@@ -367,9 +368,9 @@
     width: 65px;
     height: 3px;
     background-color: #e1d9bd;
-    position: absolute;
-    top: 30px;
-    left: 120px;
+    position: relative;
+    top: 10px;
+    left: 105px;
   }
   
   .aside-post-item {
@@ -759,7 +760,7 @@
 
 }
 
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 640px) and (orientation: portrait) { /*trends for mobile*/
 
   .trends-container {
     flex-wrap: wrap;
