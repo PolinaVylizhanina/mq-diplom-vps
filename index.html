@@ -311,7 +311,7 @@
                     <source
                       media="(max-width: 40px)"
                       srcset="img/shop-item-mobile1.jpg">
-                    <img src="img/shop-item-tablet1.jpg" alt="pillow on the sofa">
+                    <img src="img/shop-item-tablet1.jpg" class="product-image" alt="pillow on the sofa">
                   </picture>
                 </div>
                   <div class="product-description">
@@ -342,7 +342,7 @@
                     <source
                       media="(max-width: 640px)"
                       srcset="img/shop-item-mobile2.jpg">
-                    <img src="img/shop-item-tablet2.jpg" alt="pillow on the sofa">
+                    <img src="img/shop-item-tablet2.jpg" class="product-image" alt="pillow on the sofa">
                   </picture>
                 </div>
                   <div class="product-description">
@@ -373,7 +373,7 @@
                     <source
                       media="(max-width: 640px)"
                       srcset="img/shop-item-mobile3.jpg">
-                    <img src="img/shop-item-tablet3.jpg" alt="pillow on the sofa">
+                    <img src="img/shop-item-tablet3.jpg" class="product-image" alt="pillow on the sofa">
                     </picture>
                   </div>
                   <div class="product-description">
@@ -394,7 +394,7 @@
                   </div>
                 </article>
               </section>
-             <!--<footer class="footer">
+              <footer class="footer">
                 <div class="footer-container">
                   <ul class="list-social-icon">
                     <li class="social-icon-item"><a class="social-icon-link icon_twitter" href="#0">
@@ -417,7 +417,52 @@
                  <div class="copyright">
                     <p class="text-copyright">Copyright © 2009–2019 City Blog LLC.</p>
                   </div>
-              </footer>--> 
+              </footer>
+            </div>
+            <div class="popup popup-hiden">
+              <div class="popup-container">
+                <div class="popup-content">
+                  <button class="button-popup">
+                    <span class="popup-hidden-button">Закрыть popup</span>
+                  </button>
+                  <div class="popup-title">
+                    <h3 class="popup-caption">Ваш Фидбэк</h3>
+                  </div>
+                  <form class="popup-form">
+                    <div class="form-group">
+                      <label class="select-group">
+                        <span class="name-label">Как часто вы заходите на сайт?</span>
+                        <select class="select">
+                          <option value="day" selected>Почти каждый день</option>
+                          <option value="week">Пару раз в неделю</option>
+                          <option value="month">Пару раз в месяц</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                         <span class="name-label">Вы подписаны на e-mail рассылку?</span>
+                          <label class="radio-group">
+                            <input type="radio" class="radio" name="radio-subscription">
+                            <span class="radio-group-text">Да</span>
+                          </label>
+                          <label class="radio-group">
+                            <input type="radio" class="radio" name="radio-subscription">
+                            <span class="radio-group-text">Нет</span>
+                          </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="checkbox-group">
+                        <span class="name-label">Расскажите, какой контен вы хотели бы видеть на нашем сайте?</span>
+                        <textarea class="form-textarea" placeholder="Может, больше рецептов?"></textarea>
+                      </label>                  
+                    </div>
+                    <div class="form-group">
+                      <button class="form-button">Отправить</button>                  
+                    </div>
+                  </form>
+                  
+                </div>
+              </div>
             </div>
         </body>    
 </html>
